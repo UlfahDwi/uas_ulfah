@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Web Programming - Final Semester Exam</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="w3l-header">
+        <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span class="fa fa-pencil-square-o"></span> Web Programming Blog</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa icon-expand fa-bars"></span>
+                    <span class="fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown @@category__active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categories <span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item @@cp__active" href="technology.html">Technology posts</a>
+                                <a class="dropdown-item @@ls__active" href="lifestyle.html">Lifestyle posts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item @@contact__active">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item @@about__active">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+
+                    <!--/search-right-->
+                    <div class="search-right mt-lg-0 mt-2">
+                        <a href="#search" title="search"><span class="fa fa-search" aria-hidden="true"></span></a>
+                        <div id="search" class="pop-overlay">
+                            <div class="popup">
+                                <h3 class="hny-title two">Search here</h3>
+                                <form action="#" method="Get" class="search-box">
+                                    <input type="search" placeholder="Search for blog posts" name="search"
+                                        required="required" autofocus="">
+                                    <button type="submit" class="btn">Search</button>
+                                </form>
+                                <a class="close" href="#close">×</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="w3l-homeblock1">
+        <div class="container pt-lg-5 pt-md-4">
+            <!-- Main Section for Most Recent Posts -->
+            <div class="row">
+                <div class="col-lg-9 most-recent">
+                    <h3 class="section-title-left">Most Recent Posts</h3>
+                    <div class="list-view">
+                        <!-- Most Recent Posts from all categories in descending order -->
+                        <!-- Replace with dynamic code to fetch and display recent posts -->
+                        <div class="grids5-info img-block-mobile">
+                            <div class="blog-info align-self">
+                                <span class="category">Technology</span>
+                                <a href="#blog-single" class="blog-desc mt-0">Latest Article on Technology</a>
+                                <p>Short description of the article goes here.</p>
+                                <div class="author align-items-center mt-3 mb-1">
+                                    <a href="#author">Author Name</a> in <a href="#url">Technology</a>
+                                </div>
+                                <ul class="blog-meta">
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> Date </span>
+                                    </li>
+                                    <li class="meta-item blog-students">
+                                        <span class="meta-value"> Reads </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#blog-single" class="d-block zoom mt-md-0 mt-3"><img src="assets/images/8.jpg"
+                                    alt="" class="img-fluid radius-image news-image"></a>
+                        </div>
+
+                        <!-- More article blocks for additional posts -->
+                        <!-- Add more dynamic entries here following the same structure -->
+                    </div>
+
+                    <!-- Pagination for navigating recent posts -->
+                    <div class="pagination-wrapper mt-5">
+                        <ul class="page-pagination">
+                            <li><a class="next" href="#url"><span class="fa fa-angle-left"></span></a></li>
+                            <li><span aria-current="page" class="page-numbers current">1</span></li>
+                            <li><a class="page-numbers" href="#url">2</a></li>
+                            <li><a class="page-numbers" href="#url">3</a></li>
+                            <li><a class="page-numbers" href="#url">....</a></li>
+                            <li><a class="page-numbers" href="#url">10</a></li>
+                            <li><a class="next" href="#url"><span class="fa fa-angle-right"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Trending Section for most read articles from all categories -->
+                <div class="col-lg-3 trending mt-lg-0 mt-5 mb-lg-5">
+                    <div class="pos-sticky">
+                        <h3 class="section-title-left">Trending</h3>
+                        <div class="grids5-info">
+                            <h4>01.</h4>
+                            <div class="blog-info">
+                                <a href="#blog-single" class="blog-desc1">Most Read Article Title</a>
+                                <div class="author align-items-center mt-2 mb-1">
+                                    <a href="#author">Author</a> in <a href="#url">Category</a>
+                                </div>
+                                <ul class="blog-meta">
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> Date </span>
+                                    </li>
+                                    <li class="meta-item blog-students">
+                                        <span class="meta-value"> Number of Reads</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Additional trending articles -->
+                        <div class="grids5-info">
+                            <h4>02.</h4>
+                            <div class="blog-info">
+                                <a href="#blog-single" class="blog-desc1">Second Most Read Article Title</a>
+                                <div class="author align-items-center mt-2 mb-1">
+                                    <a href="#author">Author</a> in <a href="#url">Category</a>
+                                </div>
+                                <ul class="blog-meta">
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> Date </span>
+                                    </li>
+                                    <li class="meta-item blog-students">
+                                        <span class="meta-value"> Number of Reads</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3l-footer-16">
+        <div class="footer-content py-lg-5 py-4 text-center">
+            <div class="container">
+                <div class="copy-right">
+                    <h6>© 2024 Web Programming Blog . Made by <i>(your name)</i> with <span class="fa fa-heart" aria-hidden="true"></span><br>Designed by
+                        <a href="https://w3layouts.com">

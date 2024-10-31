@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dasbor Admin - Blog Pemrograman Web</title>
+
+    <!-- Include CSS Frameworks -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/admin-style.css">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Dasbor Admin </div>
+            <div class="list-group list-group-flush">
+                <a href="#dashboard" class="list-group-item list-group-item-action bg-light">Beranda Dasbor</a>
+                <a href="#users" class="list-group-item list-group-item-action bg-light">Pengguna</a>
+                <a href="#categories" class="list-group-item list-group-item-action bg-light">Kategori</a>
+                <a href="#articles" class="list-group-item list-group-item-action bg-light">Artikel</a>
+                <a href="#comments" class="list-group-item list-group-item-action bg-light">Komentar</a>
+                <a href="#tags" class="list-group-item list-group-item-action bg-light">Tag</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Konten Halaman -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Tampilkan Menu</button>
+                <div class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <a class="nav-link" href="index.html">Lihat Blog</a>
+                    <a class="nav-link" href="logout.php">Keluar</a>
+                </div>
+            </nav>
+
+            <div class="container-fluid mt-4">
+                <h1 class="mt-4">Ringkasan Dasbor</h1>
+                <p>Kelola semua elemen blog dari dasbor ini.</p>
+
+                <!-- Kartu Statistik (Ringkasan) -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card bg-primary text-white shadow">
+                            <div class="card-body">Total Pengguna</div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <span>Lihat Detail</span>
+                                <span class="badge badge-light">100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card bg-success text-white shadow">
+                            <div class="card-body">Total Kategori</div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <span>Lihat Detail</span>
+                                <span class="badge badge-light">10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card bg-warning text-white shadow">
+                            <div class="card-body">Total Artikel</div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <span>Lihat Detail</span>
+                                <span class="badge badge-light">200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card bg-danger text-white shadow">
+                            <div class="card-body">Total Komentar</div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <span>Lihat Detail</span>
+                                <span class="badge badge-light">300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian untuk Manajemen Pengguna -->
+                <section id="users" class="mt-5">
+                    <h2>Manajemen Pengguna</h2>
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nama Pengguna</th>
+                                <th>Email</th>
+                                <th>Peran</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Baris pengguna akan diisi secara dinamis -->
+                        </tbody>
+                    </table>
+                    <button class="btn btn-primary">Tambah Pengguna Baru</button>
+                </section>
+
+                <!-- Bagian untuk Manajemen Kategori -->
+                <section id="categories" class="mt-5">
+                    <h2>Manajemen Kategori</h2>
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nama Kategori</th>
+                                <th>Deskripsi</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Baris kategori akan diisi secara dinamis -->
+                        </tbody>
+                    </table>
+                    <button class="btn btn-primary">Tambah Kategori Baru</button>
+                </section>
+
+                <!-- Bagian untuk Manajemen Artikel -->
+                <section id="articles" class="mt-5">
+                    <h2>Manajemen Artikel</h2>
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Judul</th>
+                                <th>Penulis</th>
+                                <th>Kategori</th>
+                                <th>Jumlah Pembaca</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Baris artikel akan diisi secara dinamis -->
+                        </tbody>
+                    </table>
+                    <button class="btn btn-primary">Tambah Artikel Baru</button>
+                </section>
+
+                <!-- Bagian untuk Manajemen Komentar -->
+                <section id="comments" class="mt-5">
+                    <h2>Manajemen Komentar</h2>
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Artikel</th>
+                                <th>Pengguna</th>
+                                <th>Komentar</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Baris komentar akan diisi secara dinamis -->
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Bagian untuk Manajemen Tag -->
+                <section id="tags" class="mt-5">
+                    <h2>Manajemen Tag</h2>
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nama Tag</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Baris tag akan diisi secara dinamis -->
+                        </tbody>
+                    </table>
+                    <button class="btn btn-primary">Tambah Tag Baru</button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include JS Frameworks -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle sidebar
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+</html>
