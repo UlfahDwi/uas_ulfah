@@ -142,7 +142,7 @@ $trendingArticles = $conn->query($trendingArticlesQuery)->fetch_all(MYSQLI_ASSOC
         <div class="footer-content py-lg-5 py-4 text-center">
             <div class="container">
                 <div class="copy-right">
-                    <h6>© 2024 Web Programming Blog . Made by <i>(ulfah)</i> with <span class="fa fa-heart" aria-hidden="true"></span><br>Designed by
+                    <h6>© 2024 Web Programming Blog . Made by <i>(fadli)</i> with <span class="fa fa-heart" aria-hidden="true"></span><br>Designed by
                         <a href="https://w3layouts.com">W3layouts</a> </h6>
                 </div>
                 <ul class="author-icons mt-4">

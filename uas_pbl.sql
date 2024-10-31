@@ -116,7 +116,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `created_at`, `updated_at`) VALUES
-(1, 'ulfah', 'ulfahdwinazalina@gmail.com', '$2y$10$51DRZPhm7eN8yfzdQY.Tf.jDgUNg9ykNeOj4.5m1qxE963n9kkj2K', '2024-10-30 06:52:48', '2024-10-30 13:02:12');
+(1, 'fadli', 'fadlinurhidayat124@gmail.com', '$2y$10$51DRZPhm7eN8yfzdQY.Tf.jDgUNg9ykNeOj4.5m1qxE963n9kkj2K', '2024-10-30 06:52:48', '2024-10-30 13:02:12');
 
 -- --------------------------------------------------------
 
